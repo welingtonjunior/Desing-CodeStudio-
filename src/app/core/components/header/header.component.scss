@@ -1,0 +1,53 @@
+@import '../../../../styles/variables';
+nav{
+    width: 70%; 
+    flex-direction: row;
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    
+    a{  
+        display: inline-block;
+        color: $light-color;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-right: 30px;
+        flex-wrap: nowrap;
+        padding: 5px 0;
+        &:hover{
+            background: linear-gradient(90.04deg, $light-color 2%, $primary-color 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    .header{
+     
+        a{  
+            display: flex;
+            padding: 0 auto;
+            background: linear-gradient(90.04deg, $light-color 2%, $primary-color 100%);
+            -webkit-background-clip: text;
+            font-weight: 500;
+            -webkit-text-fill-color: transparent;
+            font-size: 0.8rem;
+            cursor: pointer;
+            &:hover{
+                background: linear-gradient(90deg, $light-color 0%, rgba(255, 255, 255, 0.5) 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            
+            }
+        }
+        
+        .active {
+            background: linear-gradient(90deg, $light-color 0%, rgba(255, 255, 255, 0.5) 100%);
+            -webkit-background-clip: text;
+            font-weight: 500;
+            -webkit-text-fill-color: transparent;
+        }
+
+        
+    }
+}
+
+
