@@ -14,6 +14,8 @@ nav{
         margin-right: 30px;
         flex-wrap: nowrap;
         padding: 5px 0;
+        text-decoration-color: transparent;
+        
         &:hover{
             background: linear-gradient(90.04deg, $light-color 2%, $primary-color 100%);
             -webkit-background-clip: text;
@@ -31,6 +33,7 @@ nav{
             -webkit-text-fill-color: transparent;
             font-size: 0.8rem;
             cursor: pointer;
+
             &:hover{
                 background: linear-gradient(90deg, $light-color 0%, rgba(255, 255, 255, 0.5) 100%);
                 -webkit-background-clip: text;
@@ -51,3 +54,13 @@ nav{
 }
 
 
+@media (max-width: 760px) {
+    nav{
+        display: flex;
+        justify-content: space-evenly;
+        width: 100vw;
+        .title{
+            display: none;
+        }
+    }
+}

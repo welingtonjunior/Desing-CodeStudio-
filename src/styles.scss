@@ -9,8 +9,35 @@
 h1, h2, h3,h4,h5,h6, span {
     font-family: 'Sora', sans-serif;
 }
-
+html {
+    scrollbar-width: thin; 
+   
+  }
 body {
     background: linear-gradient(90.04deg, $primary-color 0.02%, $secondary-color 55.64%);
     min-height: 100vh;
 }
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $light-color;
+    border-radius: 10px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: linear-gradient(90.04deg, $primary-color 0.02%, $secondary-color 55.64%);
+    border-radius: 10px;
+    border: 2px solid $light-color;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: linear-gradient(90.04deg, $secondary-color 0.02%, darken($primary-color, 10%) 55.64%);
+  }
+  
+  ::-webkit-scrollbar-thumb:active {
+    background: linear-gradient(90.04deg, darken($secondary-color, 10%) 0.02%, darken($primary-color, 10%) 55.64%);
+  }
+  

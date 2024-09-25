@@ -1,1 +1,14 @@
-<p>about works!</p>
+<section>
+<div class="title">
+    <h2>About Us</h2>
+    <p>We transform ideas into engaging digital experiences through design and development.</p>
+</div>
+<div class="about">
+<article data-aos="fade-up" *ngFor="let service of services">
+        <h5>{{service.title}}</h5>
+        <div class="service" > 
+            <p>{{service.text}}</p>
+        </div>
+    </article>
+    </div>
+</section>
