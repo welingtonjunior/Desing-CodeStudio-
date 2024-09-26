@@ -75,6 +75,13 @@
         align-items: center;
         margin: 6rem auto;
         border-radius: 0;
+
+        &-text{
+            margin: 4rem auto;
+        }
+        &-form{
+            margin: 4rem auto;
+        }
     }   
 
 }

@@ -1,0 +1,62 @@
+@import '../../../styles/variables';
+
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+  }
+  
+  .modal-content {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: $secondary-color;
+    padding: 20px;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 800px;
+    z-index: 1001;
+    margin: 1rem 2rem;
+    padding: 2rem 3rem;
+
+
+    &-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        color: $light-color;
+    }
+    
+    &-divider {
+        height: 2px;
+        background-color: $primary-color;
+        width: 100%;
+        margin: 1rem 0;
+    }
+    
+    &-body {
+        color: $light-color;
+        margin: 1rem auto;
+        padding: 10px;
+    }
+    
+    .close-button{
+        background-color: $primary-color;
+        border: 0.5px solid $light-color;
+        color: $light-color;
+        padding: 2px;
+
+        &:hover{
+            background-color: $accent-color;
+        }
+
+    }
+}
+
+  

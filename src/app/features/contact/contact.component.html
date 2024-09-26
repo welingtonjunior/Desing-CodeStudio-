@@ -51,3 +51,10 @@
       </div>
       
 </div>
+<div>
+  <app-modal *ngIf="visibleModal"
+  [title]="titleModal"
+  [body]="bodyModal"
+  (close)="visibleModal = !visibleModal"
+  ></app-modal>
+</div>
