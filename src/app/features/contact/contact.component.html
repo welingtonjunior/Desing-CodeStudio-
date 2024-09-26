@@ -1,1 +1,53 @@
-<p>contact works!</p>
+<div class="contact">
+    <div class="contact-text">
+        <h6>Contact us</h6>
+        <h3>Get In Touch With Us</h3>
+        <p>We’re here to help! If you have any questions or need assistance, feel free to reach out. Your feedback is important to us!</p>
+
+        <div *ngFor="let item of infoContact" class="contact-text-info">
+            <div class="icon">
+              <fa-icon [icon]="item.icon"></fa-icon>
+            </div>
+            <div class="text">
+              {{ item.text }}
+            </div>
+          </div>
+    </div>
+    <div  class="contact-form">
+        <form #contactForm="ngForm" (ngSubmit)="onSubmit()">
+          
+          <input
+            type="text"
+            name="name"
+            ngModel
+            placeholder="Your Name"
+            required
+          />
+          
+          <input
+            type="email"
+            name="email"
+            ngModel
+            placeholder="Your Email"
+            required
+          />
+          
+          <input
+            type="text"
+            name="subject"
+            ngModel
+            placeholder="Subject"
+          />
+          
+          <textarea
+            name="message"
+            ngModel
+            placeholder="Your Message"
+            required
+          ></textarea>
+          
+          <button type="submit" [disabled]="!contactForm.valid">Send Message</button>
+        </form>
+      </div>
+      
+</div>
