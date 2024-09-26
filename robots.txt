@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://desing-codestudio.vercel.app/sitemap.xml

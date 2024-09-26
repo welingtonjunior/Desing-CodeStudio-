@@ -18,7 +18,7 @@ export class HomeComponent implements AfterViewInit {
       this.typeText(this.title.titleFrst + ' +', 'titleFrst', () => {
         this.typeText(this.title.titleSnd, 'titleSnd', () => {
           this.typeEqual(() => {
-            this.typeText('digital innovation', 'result'); 
+            this.typeText('Digital Innovation', 'result'); 
           });
         });
       });
@@ -29,7 +29,7 @@ export class HomeComponent implements AfterViewInit {
   typeText(text: string, elementId: string, callback?: () => void) {
     const options = {
       strings: [text],
-      typeSpeed: 70,
+      typeSpeed: 50,
       backSpeed: 50,
       backDelay: 1000,
       startDelay: 500,
