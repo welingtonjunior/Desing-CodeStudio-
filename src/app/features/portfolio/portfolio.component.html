@@ -1,1 +1,12 @@
-<p>portfolio works!</p>
+<div class="portfolio-section">
+  <h2>Projects</h2>
+</div>
+  <div class="portfolio-grid">
+    <div class="portfolio-item" *ngFor="let project of projects">
+      <a [href]="project.link" target="_blank">
+        <img [src]="project.image" alt="Project Image" >
+        <h3>{{ project.title }}</h3>
+      </a>
+    </div>
+  </div>
+  

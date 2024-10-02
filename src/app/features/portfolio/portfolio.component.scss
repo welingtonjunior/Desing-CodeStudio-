@@ -1,0 +1,50 @@
+@import '../../../styles/variables';
+
+.portfolio-section {
+  text-align: center;
+  margin: 6rem auto;
+
+  h2 {
+    background: linear-gradient(90.04deg, $light-color 2%, $primary-color 100%);
+        -webkit-background-clip: text;
+        font-weight: 500;
+        -webkit-text-fill-color: transparent;
+  }
+}
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 6rem;
+  
+    .portfolio-item {
+      text-align: center;
+      background: $light-color;
+      padding:  20px;
+      background: $secondary-color;
+      border: 0.3px solid $light-color;
+      border-radius: 12px;
+      
+      & img{
+        margin: 5px auto;
+        width: 100%;  
+        height: 250px;        
+        object-fit: cover;
+        transition: transform 0.5s ease;
+        border-radius: 12px;
+      }
+
+      &:hover img {
+        transform: scale(1.05); 
+      }
+
+      & a {
+        position: relative; 
+        text-decoration: none;
+        color: $light-color;
+        z-index: 1; 
+      }
+    
+
+    }
+  }

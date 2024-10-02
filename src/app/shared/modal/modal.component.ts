@@ -12,9 +12,16 @@ export class ModalComponent{
   
   @Input() title: string = '';     
   @Input() body: string = '';      
+  @Input() duration!: number;
 
   @Output() close = new EventEmitter<void>();
 
+  ngOnInit(): void {
+   setTimeout(() => {
+      this.closeModal()
+   }, this.duration);
+    
+  }
   protected closeModal(){
     this.close.emit()
   }

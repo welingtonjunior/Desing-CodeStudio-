@@ -28,10 +28,13 @@
             type="email"
             name="email"
             ngModel
+            appEmailValidator
             placeholder="Your Email"
             required
+            (focusout)="onFocusOut(contactForm.controls)"
+            [ngStyle]="{'border': emailError ? '2px solid red' : ' solid #5465FF'}"
           />
-          
+          <div *ngIf="emailError" class="error">O email é obrigatório.</div>
           <input
             type="text"
             name="subject"
@@ -55,6 +58,7 @@
   <app-modal *ngIf="visibleModal"
   [title]="titleModal"
   [body]="bodyModal"
+  [duration]="3000"
   (close)="visibleModal = !visibleModal"
   ></app-modal>
 </div>
